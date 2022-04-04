@@ -7,6 +7,12 @@ export default createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         background: var(--background);
         margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
     }
 
     html, border-style, #root {

@@ -17,4 +17,10 @@ export const Container = styled.button<Props>`
     color: ${(props) => (props.outlineButton ? 'var(--primary)' : 'var(--secondary)')};
     background: ${(props) => (props.outlineButton ? 'transparent' : 'var(--primary)')};
     border: ${(props) => (props.outlineButton ? '1px solid var(--primary)' : 'none')};
+
+    :disabled {
+        color: var(--terciary);
+        background: var(--muted);
+        cursor: not-allowed;
+    }
 `;

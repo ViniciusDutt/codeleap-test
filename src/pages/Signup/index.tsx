@@ -31,8 +31,9 @@ export default function Signup() {
           <Title>Welcome to CodeLeap network!</Title>
 
           <TextField name="username" type="text" label="Please enter your username" placeholder="John doe" value={state.username} onChange={handleChange} />
-        
-          <Button onClick={handleSubmit}>Create</Button>
+
+          
+          <Button disabled={state.username === ''} onClick={handleSubmit}>Create</Button>
       </Content>
     </Container>
   );

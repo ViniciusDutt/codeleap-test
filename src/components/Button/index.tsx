@@ -6,11 +6,12 @@ type Props = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>
   outline?: boolean
   children: React.ReactNode
+  disabled?: boolean
 }
 
-export default function Button({onClick, outline, children}:Props) {
+export default function Button({onClick, outline, children, disabled}:Props) {
   return (
-    <Container onClick={onClick} outlineButton={outline}>
+    <Container onClick={onClick} outlineButton={outline} disabled={disabled}>
       {children}
     </Container>
   )
